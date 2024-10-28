@@ -1,5 +1,6 @@
 package com.example.localdemoenkoin;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -49,7 +50,6 @@ public class HelloController {
     protected void btnTerv() {
         welcomeText.setTextFill(Color.rgb(0,0,255));
         welcomeText.setFont(Font.font(18));
-
         welcomeText.setText("Hej, Välkommen till JavaFX ResourceBundle!!");
 
     }
@@ -57,12 +57,13 @@ public class HelloController {
     protected void btnVel() {
         welcomeText.setTextFill(Color.rgb(200,120,120));
         welcomeText.setFont(Font.font(14));
-
         welcomeText.setText("Moi, Tervetuloa JavaFX ResourceBundleen!!");
-
-
     }
 
-
+    public void btnJp(ActionEvent actionEvent) {
+        welcomeText.setTextFill(Color.rgb(200,120,120));
+        welcomeText.setFont(Font.font(14));
+        welcomeText.setText("こんにちは、JavaFX ResourceBundle へようこそ!!");
+    }
 }
 

@@ -14,4 +14,5 @@
     <Label fx:id="welcomeText" />
     <Button onAction="#onHelloButtonClick" text="Internationalization" />
    <Button id="button2" mnemonicParsing="false" onAction="#btnVel" prefHeight="21.0" prefWidth="63.0" text="%button2.text" />
+    <Button id="button4" mnemonicParsing="false" onAction="#btnJp" prefHeight="21.0" prefWidth="63.0" text="%button4.text" />
 </VBox>
